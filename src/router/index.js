@@ -3,7 +3,6 @@ import VueRouter from 'vue-router';
 import EventCreatePage from '../views/EventCreate.vue';
 import EventShowPage from '../views/EventShow.vue';
 import EventListPage from '../views/EventList.vue';
-import UserPage from '../views/User.vue';
 import NotFoundPage from '../views/NotFoundPage.vue';
 Vue.use(VueRouter);
 
@@ -14,20 +13,15 @@ const routes = [
     component: EventListPage,
   },
   {
-    path: '/event',
+    path: '/event/:id',
     name: 'event-show',
     component: EventShowPage,
+    props: true,
   },
   {
     path: '/event/create',
     name: 'event-create',
     component: EventCreatePage,
-  },
-  {
-    path: '/user/:username',
-    name: 'user',
-    component: UserPage,
-    props: true,
   },
   {
     path: '/:pathMatch(.*)*',

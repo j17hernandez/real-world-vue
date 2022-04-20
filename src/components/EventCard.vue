@@ -1,36 +1,21 @@
 <template>
   <router-link
     class="event-link"
-    :to="{ name: 'event-show', params: { id: '1' } }"
+    :to="{ name: 'event-show', params: { id: event.id } }"
   >
     <div class="event-card -shadow">
       <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
       <h4 class="title">{{ event.title }}</h4>
-      <span>{{ event.attendees.length }} attending</span>
+      <BaseIcon name="users">
+        <span class="attending"> {{ event.attendees.length }} attending </span>
+      </BaseIcon>
     </div>
   </router-link>
 </template>
 <script>
 export default {
-  data() {
-    return {
-      event: {
-        id: 1,
-        title: 'Park Cleanup',
-        date: new Date().toDateString(),
-        time: new Date().toLocaleTimeString(),
-        attendees: [
-          {
-            id: 'abcd1234',
-            name: 'Jorge Hernández',
-          },
-          {
-            id: 'abcd5678',
-            name: 'Luis Rayo',
-          },
-        ],
-      },
-    };
+  props: {
+    event: Object,
   },
 };
 </script>
@@ -53,5 +38,8 @@ export default {
   color: black;
   text-decoration: none;
   font-weight: 100;
+}
+.attending {
+  font-weight: bold;
 }
 </style>
