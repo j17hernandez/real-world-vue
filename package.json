@@ -1,14 +1,21 @@
 {
   "name": "real-world-vue",
+  "author": {
+    "name": "Jorge Luis Hernandez Rayo",
+    "url": "https://github.com/j17hernandez"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint --fix",
+    "format": "prettier \"src/**/*.{js,html,scss,vue}\" --write"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
+    "core-js": "^3.22.1",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"

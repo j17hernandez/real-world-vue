@@ -1,28 +1,43 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
-
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import EventCreatePage from '../views/EventCreate.vue';
+import EventShowPage from '../views/EventShow.vue';
+import EventListPage from '../views/EventList.vue';
+import UserPage from '../views/User.vue';
+import NotFoundPage from '../views/NotFoundPage.vue';
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "home",
-    component: HomeView,
+    path: '/',
+    name: 'event-list',
+    component: EventListPage,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: '/event',
+    name: 'event-show',
+    component: EventShowPage,
+  },
+  {
+    path: '/event/create',
+    name: 'event-create',
+    component: EventCreatePage,
+  },
+  {
+    path: '/user/:username',
+    name: 'user',
+    component: UserPage,
+    props: true,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: NotFoundPage,
   },
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes,
 });
