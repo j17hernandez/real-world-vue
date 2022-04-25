@@ -71,6 +71,62 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 8182383,
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "RapiFood",
+      "description": "This is an event about people feeding pets.",
+      "location": "In my house",
+      "date": "2022-04-23T17:11:00.000Z",
+      "time": "20:00",
+      "attendees": []
+    },
+    {
+      "id": 6314041,
+      "category": "education",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "Graduation Of Course ",
+      "description": "For Grades 11°",
+      "location": "IEAN",
+      "date": "2022-06-30T17:20:00.000Z",
+      "time": "14:00",
+      "attendees": []
+    },
+    {
+      "id": 4925671,
+      "category": "food",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "Hamburguer Free",
+      "description": "For the people more interesting",
+      "location": "La Granja Burguer",
+      "date": "2022-04-30T17:29:00.000Z",
+      "time": "15:00",
+      "attendees": []
+    },
+    {
+      "id": 1422254,
+      "category": "community",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "examples",
+      "description": "Everyone",
+      "location": "My house",
+      "date": "2022-04-28T17:34:00.000Z",
+      "time": "17:00",
+      "attendees": []
     }
   ]
 }

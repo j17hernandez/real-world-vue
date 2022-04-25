@@ -27,7 +27,7 @@ npm run lint
 ### Run Client Server BD
 
 ```
-json-server --watch db.json
+npm run json-server
 ```
 
 ### Customize configuration

@@ -13,15 +13,15 @@ const routes = [
     component: EventListPage,
   },
   {
+    path: '/event/create',
+    name: 'event-create',
+    component: EventCreatePage,
+  },
+  {
     path: '/event/:id',
     name: 'event-show',
     component: EventShowPage,
     props: true,
-  },
-  {
-    path: '/event/create',
-    name: 'event-create',
-    component: EventCreatePage,
   },
   {
     path: '/:pathMatch(.*)*',
