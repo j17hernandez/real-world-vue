@@ -7,7 +7,10 @@
       "time": "10:00",
       "location": "Daytona Beach",
       "description": "Let's clean up this beach.",
-      "organizer": "Adam Jahr",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
       "category": "sustainability",
       "attendees": [
         {
@@ -35,7 +38,10 @@
       "time": "12:00",
       "location": "132 N Magnolia Street, Orlando, Florida",
       "description": "We're going to clean up this park.",
-      "organizer": "Adam Jahr",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
       "category": "nature",
       "attendees": [
         {
@@ -55,7 +61,10 @@
       "time": "12:00",
       "location": "132 N Magnolia Street, Orlando, Florida",
       "description": "Help animals find new homes.",
-      "organizer": "Gregg Pollack",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
       "category": "animal welfare",
       "attendees": [
         {
@@ -126,6 +135,90 @@
       "location": "My house",
       "date": "2022-04-28T17:34:00.000Z",
       "time": "17:00",
+      "attendees": []
+    },
+    {
+      "id": 5779319,
+      "category": "nature",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "Nature and life ",
+      "description": "This is an nature event ",
+      "location": "My house",
+      "date": "2022-04-26T16:11:00.000Z",
+      "time": "19:00",
+      "attendees": []
+    },
+    {
+      "id": 8413468,
+      "category": "education",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "Last Meeting School ",
+      "description": "A degree needs to finish",
+      "location": "School",
+      "date": "2022-04-30T17:15:00.000Z",
+      "time": "13:00",
+      "attendees": []
+    },
+    {
+      "id": 9390351,
+      "category": "community",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "Hackaton",
+      "description": "Devs and Hackers",
+      "location": "WEB",
+      "date": "2022-04-29T16:06:00.000Z",
+      "time": "9:00",
+      "attendees": []
+    },
+    {
+      "id": 5775550,
+      "category": "housing",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "example 1",
+      "description": "Nothing",
+      "location": "My house",
+      "date": "2022-04-30T16:28:00.000Z",
+      "time": "14:00",
+      "attendees": []
+    },
+    {
+      "id": 7365095,
+      "category": "",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "Holi",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 1704661,
+      "category": "housing",
+      "organizer": {
+        "id": "abcd1234",
+        "name": "Jorge Hernández"
+      },
+      "title": "House tour",
+      "description": "This is my new house",
+      "location": "My house baby",
+      "date": "2022-04-30T16:34:00.000Z",
+      "time": "18:00",
       "attendees": []
     }
   ]

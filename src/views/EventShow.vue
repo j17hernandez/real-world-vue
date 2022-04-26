@@ -28,20 +28,20 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 export default {
   name: 'EventShowPage',
   props: {
-    id: Number,
+    id: [String, Number],
   },
   created() {
-    this.$store.dispatch('fetchEvent', this.id);
+    this.fetchEvent(this.id);
   },
-  computed: {
-    event() {
-      return this.event;
-    },
-    ...mapState(['event']),
+  computed: mapState({
+    event: (state) => state.event.event,
+  }),
+  methods: {
+    ...mapActions('event', ['fetchEvent']),
   },
 };
 </script>

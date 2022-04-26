@@ -1,5 +1,16 @@
 # real-world-vue
 
+## Vuex Store
+
+A example to get data from other modules, the following line of code is needed
+
+```js
+
+  fetchEvents({ commit, rootState }, { perPage, page }) {
+    console.log('User logged', rootState.user.user);
+  }
+```
+
 ## Project setup
 
 ```
